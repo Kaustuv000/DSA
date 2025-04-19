@@ -38,7 +38,7 @@ int convertToDecimal(string bin){
     }
 
     return dec;
-
+}
 int main(){
     int bin;
     cin >> bin;
