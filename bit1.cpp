@@ -38,17 +38,7 @@ int convertToDecimal(string bin){
     }
 
     return dec;
-}
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * @brief The main function of the program, which will be called when program
- *        execution begins. This function will get two integers from the user, 
- *        convert the first one to binary, display the binary number, convert the
- *        second binary number to decimal and display the converted decimal number.
- * @return 0 if the program runs successfully.
- */
-/*******  cb7b843b-99fa-4751-abf8-ceb70680a63c  *******/
 int main(){
     int bin;
     cin >> bin;
