@@ -30,9 +30,9 @@ string convertToBinary(int n){
 int convertToDecimal(string bin){
     
     int dec = 0;
-    int power =0;
+    int power = 0;
     for (int i = bin.length() - 1; i >= 0; i--) {
-        int bit = bin[i] - '0';   
+        int bit = bin[i] - '0'; // converts to number from string as it is stored in ASCII
         dec += bit * pow(2, power); 
         power++;
     }
