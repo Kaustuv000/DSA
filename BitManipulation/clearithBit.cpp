@@ -10,8 +10,8 @@ using namespace std;
 int n = 13; // 1 1 0 1
 int i = 2;
 int main(){
-    int mask = ~(1<<i);
-    int ans = n & mask;
+    int mask = ~(1<<i); // by using negation operation 0 1 0 0 -> 1 0 1 1
+    int ans = n & mask; // 1 0 0 1
     cout<< ans << endl;
     return 0;
 }
