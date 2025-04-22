@@ -1,0 +1,14 @@
+# For division by 2 -> we can do right shift by 1
+
+# To check if the number is odd -> we can do is N&1
+# if this gives 1 then we can be sure that the number is odd
+# as the LSB of odd number will always be one
+
+# Binary search faster version
+# in place of (low+high)/2
+# we can do (low+high)>>1 -> this means dividing by 2
+
+# In STL there is already a function
+# __builtin_popcount(n) -> tells the number of set bits in number 'n'
+
+# 
