@@ -11,4 +11,9 @@
 # In STL there is already a function
 # __builtin_popcount(n) -> tells the number of set bits in number 'n'
 
-# 
+# we can also count set bits by removing the last set bits, one by one
+# we can count by doing N & N-1
+ 
+# To know power of 2
+# we do N & N-1 , if we get 0 then , its power of 2
+
