@@ -17,3 +17,8 @@
 # To know power of 2
 # we do N & N-1 , if we get 0 then , its power of 2
 
+# we can reverse an unsigned binary string by 
+# first left shifting the ans variable, which will make space for the bits
+# ans = ans | (n & 1) <- this adds the last bit to the answer after extracting it with AND
+# rightshifting the actual binary string by 1 as we already extracted the right most bit
+

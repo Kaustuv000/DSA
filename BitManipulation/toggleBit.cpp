@@ -17,7 +17,7 @@ int i = 1;
 int main(){
 
     int mask = 1<<i;
-    int ans = n^mask;
+    int ans = n^mask; // XOR operator -> ^
     cout << ans << endl;
 
     return 0;
