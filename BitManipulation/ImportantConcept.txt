@@ -22,3 +22,39 @@
 # ans = ans | (n & 1) <- this adds the last bit to the answer after extracting it with AND
 # rightshifting the actual binary string by 1 as we already extracted the right most bit
 
+
+# Distance between two integers
+
+=========V1===================
+
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        int ans = x ^ y; //XOR gives us the places where the bit needs to be flipped
+        int cnt = 0;
+        while (ans > 0){ // then we check the number of set bits
+            cnt += ans%2;
+            ans = ans/2;
+        }
+        return cnt;
+    }
+};
+
+=========V2===================
+
+class Solution {
+ public:
+  int hammingDistance(const int x, const int y) {
+    int ret = 0;
+
+    // this for loop runs till one of the number is 0
+    // it XOR 's the LSB and finds if it needs to be flipped
+    // like the previous one
+    // then adds this directly to the result
+    // previously we were checking set bits seperately
+    for (int a = x, b = y; a > 0 || b > 0; a >>= 1, b >>= 1) {
+      ret += (a & 1) ^ (b & 1);
+    }
+    return ret;
+  }
+};
