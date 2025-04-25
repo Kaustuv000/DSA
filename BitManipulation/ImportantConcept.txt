@@ -58,3 +58,30 @@ class Solution {
     return ret;
   }
 };
+
+
+# Given a non-empty array of integers nums, 
+# every element appears twice except for one. 
+# Find that single one.
+
+All duplicate numbers cancel each other with XOR.
+a ^ a = 0, and 0 ^ b = b
+
+====== V1 -> Map =====================
+
+int singleNumber(vector<int>& nums) {
+    unordered_map<int, int> freq;
+    for (int num : nums) freq[num]++;
+    for (auto &pair : freq)
+        if (pair.second == 1) return pair.first;
+    return -1;
+}
+
+====== V2 -> Bit Manipulation ========
+
+int singleNumber(vector<int>& nums) {
+    int ans = 0;
+    for (int num : nums)
+        ans ^= num;
+    return ans;
+}
