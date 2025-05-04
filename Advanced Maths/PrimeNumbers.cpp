@@ -87,5 +87,5 @@ int main(){
 
 }
 
-// TC -> O(sqrt(n) * logn)
+// TC -> O(sqrt(n) * logn) // sqrt(n) for the loop and logn for the while loop
 // SC -> O(prime factors) -> only storing result 
