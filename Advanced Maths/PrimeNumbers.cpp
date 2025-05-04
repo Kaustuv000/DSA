@@ -86,3 +86,6 @@ int main(){
     return 0;
 
 }
+
+// TC -> O(sqrt(n) * logn)
+// SC -> O(prime factors) -> only storing result 
