@@ -36,10 +36,16 @@ using namespace std;
 int main(){
     int n = 37;
     int prime[n+1];
+
+    // Initialize all numbers as prime
+    // 0 and 1 are not prime
+    // this for loop will run from 0 to n
+    // and mark all numbers as prime
     for (int i = 2; i <= n; i++){
         prime[i] = 1; // Assume all numbers are prime initially
     }
 
+    // Mark non-prime numbers
     for(int i = 2; i * i <= n; i++){
         if (prime[i]==1){
             for (int j = i * i; j <= n; j += i){
@@ -47,7 +53,8 @@ int main(){
             }
         }
     }
-
+    
+    // Print all prime numbers
     for (int i = 2; i <= n; i++){
         if (prime[i] == 1){
             cout << i << " ";
