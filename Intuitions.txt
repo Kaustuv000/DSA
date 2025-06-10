@@ -1,9 +1,8 @@
 1. Greatest/ smallest in constant complexity
 => MONOTONIC STACK
+=> can be used with sliding window also
 
 2. Question regarding prime numbers
 => SIEVE OF ERATOSTHENES
 where we mark every other element by 1 or i
 along with its multiples. The numbers left with itself are the prime numbers
-
-3.
