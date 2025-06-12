@@ -1,0 +1,50 @@
+1. DP is enhanced recursion
+
+2. recursion is when a function is called multiple times
+
+3. when this function call is stopped , then this value is stored in the dp table
+
+4. When to use DP?
+
+-> we are given a choice, like knapsack. For example an element should be added in result or not
+
+-> overlapping recursion 
+
+-> we remember the answers in a table
+
+-> if only one function call, it cannot be dp
+
+-> if MORE THAN ONE FUNCTION CALL, then it can be dp, as the current function can be called by some other function call
+
+-> OPTIMAL THINGS will be asked , like maxima , minima , etc.
+
+
+*****************************************
+APPROACH:
+
+1. Write RECURSIVE SOLUTION first
+2. Memoize
+3. top down or dp table or matrix
+
+
+if famous problems then we can use the direct top down approach.
+
+
+can be various variations.
+
+*****************************************
+MAIN-STREAM PROBLEMS (variations) :
+
+1. 0-1 knapsack       (6)
+2. unbounded knapsack (5)
+3. fibonacci series   (7)
+4. LCS                (15)
+5. LIS                (10)
+6. Kadane's algorithm (6)
+7. Matrix chain multiplication (7) 
+8. DP on trees        (4)
+9. DP on grid         (14)
+10. Others            (5)
+
+
+*****************************************
