@@ -197,6 +197,6 @@ int main(){
     int W = 7;
     int n = sizeof(wt)/sizeof(wt[0]);
 
-    cout << "Max val: " << knapsack(wt, val, W, n) << endl;
+    cout << "Max Profit: " << knapsack(wt, val, W, n) << endl;
     return 0;
 }
