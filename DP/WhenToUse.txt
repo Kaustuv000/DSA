@@ -48,3 +48,6 @@ MAIN-STREAM PROBLEMS (variations) :
 
 
 *****************************************
+how to identify the knapsack problem?
+
+-> given items, and choose the number of items, and a bag is given 
